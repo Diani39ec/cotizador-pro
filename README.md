@@ -60,3 +60,14 @@ Desarrolladora de Software — GitHub: [Diani39ec](https://github.com/Diani39ec)
 ## Licencia
 
 MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Estructura del proyecto
+```
+cotizador-pro/
+├── src/server.js (Express + helmet + rate-limit + JWT)
+├── src/database.js (sql.js) · src/pdf-generator.js (pdfkit) · src/license-generator.js
+├── public/ (index.html + css/ + js/ — frontend del cotizador)
+├── data/cotizador.db (base embebida) · .env / .env.example
+└── scripts: start · dev · generate-license
+```
+Stack: Node.js + Express + SQLite (sql.js) + PDFKit + JWT.
